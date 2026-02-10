@@ -1,5 +1,5 @@
-/* Style the container div as a flex container to align items in a row */
-div {
+/* Style the specific container div as a flex container to align items in a row */
+.form-container {
   max-width: 600px; /* increased width for horizontal layout */
   margin: 50px auto; /* centers the box */
   padding: 20px;
@@ -15,7 +15,7 @@ div {
 }
 
 /* Keep your existing label style if needed or hide labels for cleaner look */
-/* label {
+  label {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
@@ -44,7 +44,6 @@ button {
 button:hover {
   background-color: #45a049;
 }
-
 
 
 
