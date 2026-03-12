@@ -3,36 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Room Check-In</title>
     <link rel="stylesheet" href="noice.css" />
-    <script src="sussyboiiii.js"></script>
-    
+    <script src="sussyboiiii.js" defer></script>
 </head>
 <body>
-    <div>
-  <label for="name">Full Name</label>
-  <input type="text" id="name" placeholder="Enter full name" />
 
-  <button onclick="saveData()">Check In</button>
-</div>
-<div>
-  <label for="name">Full Name</label>
-  <input type="text" id="name" placeholder="Enter full name" />
+    <div class="room-container">
+        <h3>Room 1</h3>
+        <input type="text" id="room1" placeholder="Enter guest name" />
+        <div class="button-group">
+            <button class="check-in" onclick="checkIn(1)">Check In</button>
+            <button class="lock" onclick="lockRoom(1)">Lock</button>
+            <button class="clear" onclick="clearRoom(1)">Clear</button>
+        </div>
+    </div>
 
+    <div class="room-container">
+        <h3>Room 2</h3>
+        <input type="text" id="room2" placeholder="Enter guest name" />
+        <div class="button-group">
+            <button class="check-in" onclick="checkIn(2)">Check In</button>
+            <button class="lock" onclick="lockRoom(2)">Lock</button>
+            <button class="clear" onclick="clearRoom(2)">Clear</button>
+        </div>
+    </div>
 
-  <button onclick="saveData()">Check In</button>
-</div>
-<div>
-  <label for="name">Full Name</label>
-  <input type="text" id="name" placeholder="Enter full name" />
+    <div class="room-container">
+        <h3>Room 3</h3>
+        <input type="text" id="room3" placeholder="Enter guest name" />
+        <div class="button-group">
+            <button class="check-in" onclick="checkIn(3)">Check In</button>
+            <button class="lock" onclick="lockRoom(3)">Lock</button>
+            <button class="clear" onclick="clearRoom(3)">Clear</button>
+        </div>
+    </div>
 
+    <div id="checkInDisplay" style="margin-top: 20px; font-weight: bold;"></div>
 
-  <button onclick="saveData()">Check In</button>
-</div>
-
-<div id="checkInDisplay" style="margin-top: 20px; font-weight: bold;"></div>
-
-<!-- Placeholder for timestamp -->
-<div id="placeholder" style="display:none;"></div>
 </body>
 </html>
