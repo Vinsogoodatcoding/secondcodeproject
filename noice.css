@@ -1,18 +1,30 @@
-/* Room container boxes */
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Room container boxes - taller than wide */
 .room-container {
-    max-width: 400px;
-    margin: 20px auto;
+    width: 200px;
+    min-height: 300px;
     padding: 20px;
     border: 2px solid #ccc;
     border-radius: 8px;
     background-color: #f9f9f9;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    
+    display: flex;
+    flex-direction: column;
 }
 
 /* Room title */
 .room-container h3 {
     margin: 0 0 15px 0;
     color: #333;
+    text-align: center;
 }
 
 /* Input field */
@@ -25,15 +37,17 @@ input {
     margin-bottom: 15px;
 }
 
-/* Button group container */
+/* Button group - stack vertically */
 .button-group {
     display: flex;
+    flex-direction: column;
     gap: 10px;
+    margin-top: auto;
 }
 
 /* Base button style */
 button {
-    flex: 1;
+    width: 100%;
     padding: 10px 15px;
     color: white;
     border: none;
@@ -42,7 +56,7 @@ button {
     font-size: 1em;
 }
 
-/* Check In button - Green */
+/* Check In - Green */
 button.check-in {
     background-color: #4CAF50;
 }
@@ -51,7 +65,7 @@ button.check-in:hover {
     background-color: #45a049;
 }
 
-/* Lock button - Orange */
+/* Lock - Orange */
 button.lock {
     background-color: #ff9800;
 }
@@ -60,7 +74,7 @@ button.lock:hover {
     background-color: #e68900;
 }
 
-/* Clear button - Red */
+/* Clear - Red */
 button.clear {
     background-color: #f44336;
 }
@@ -69,7 +83,9 @@ button.clear:hover {
     background-color: #da190b;
 }
 
-
-
-
-
+/* Check-in display */
+#checkInDisplay {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
