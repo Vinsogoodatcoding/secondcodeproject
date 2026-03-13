@@ -89,3 +89,10 @@ button.clear:hover {
     text-align: center;
     margin-top: 20px;
 }
+
+.logo-container {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    flex-basis: 100%;  /* forces it to take full row */
+}
